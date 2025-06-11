@@ -1,0 +1,26 @@
+/* # Вспомогательные классы */
+
+.alert {
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 15px;
+}
+
+.alert.error {
+    background-color: #ffebee;
+    color: var(--error-color);
+}
+
+.empty-message {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: var(--text-light);
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: var(--text-light);
+}

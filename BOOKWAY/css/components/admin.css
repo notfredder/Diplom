@@ -1,0 +1,234 @@
+/* Административная панель - унифицированные стили */
+.admin-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.settings-container, .admin-content {
+    background: white;
+    border-radius: var(--radius-md);
+    padding: 30px;
+    box-shadow: var(--shadow);
+}
+
+.admin-tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.admin-tabs a {
+    padding: 8px 15px;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.admin-tabs a.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.admin-tabs a:hover:not(.active) {
+    background: var(--bg-lighter);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="number"],
+.form-group input[type="url"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background: white;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.submit-btn, .save-btn {
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.submit-btn:hover, .save-btn:hover {
+    background: #e56b00;
+}
+
+.logout-btn {
+    padding: 10px 20px;
+    background: #f8f8f8;
+    color: #d32f2f;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.logout-btn:hover {
+    background: #f0f0f0;
+}
+
+/* Стили для таблиц */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-table th, 
+.admin-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.admin-table th {
+    background: var(--bg-lighter);
+    font-weight: 600;
+}
+
+.action-btn {
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 5px;
+    transition: var(--transition);
+}
+
+.action-btn.edit {
+    background: #17a2b8;
+    color: white;
+}
+
+.action-btn.delete {
+    background: #dc3545;
+    color: white;
+}
+
+.action-btn.edit:hover {
+    background: #138496;
+}
+
+.action-btn.delete:hover {
+    background: #c82333;
+}
+
+/* Стили для загрузки файлов */
+.avatar-group {
+    margin-top: 30px;
+}
+
+.avatar-preview-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.current-avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border-color);
+}
+
+.avatar-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#avatarInput, #headerInput {
+    display: none;
+}
+
+.upload-btn {
+    padding: 8px 15px;
+    background: var(--bg-lighter);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.upload-btn:hover {
+    background: #e0e0e0;
+}
+
+.hint {
+    font-size: 13px;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.header-preview-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.current-header {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+    margin-bottom: 10px;
+}
+
+.settings-section {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+}
+
+.settings-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.form-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}

@@ -1,0 +1,43 @@
+/* # Подвал */
+:root {
+    --footer-height: 80px; /* Примерная высота подвала */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#page-wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    flex: 1 0 auto;
+}
+
+.site-footer {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
+    flex-shrink: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.copyright {
+    color: var(--text-light);
+    font-size: 14px;
+    margin: 0;
+}

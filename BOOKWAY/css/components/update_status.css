@@ -1,0 +1,188 @@
+/* Стили для статуса книги на странице книги */
+.book-cover-container {
+    position: relative;
+}
+
+.book-status-container {
+    text-align: center;
+}
+
+/* Стили для меню статусов */
+.status-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.status-btn {
+    width: 250px;
+    height: 50px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    gap: 8px;
+    font-size: 16px;
+    padding: 0 15px; /* Добавляем отступы по бокам */
+}
+
+.status-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0; /* Растягиваем на всю ширину кнопки */
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 100;
+    display: none;
+    min-width: 250px; /* Ширина как у кнопки */
+    padding: 5px 0;
+    text-align: center; /* Центрирование текста в меню */
+}
+
+.status-menu.show {
+    display: block !important;
+}
+
+.status-menu-item {
+    width: 100%;
+    padding: 10px 16px; /* Увеличиваем отступы */
+    text-align: center; /* Центрируем текст в пунктах меню */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    justify-content: center; /* Дополнительное центрирование */
+    align-items: center; /* Выравнивание по центру по вертикали */
+}
+
+.status-menu-item:hover {
+    background: #f5f5f5;
+}
+
+.menu-divider {
+    height: 1px;
+    background: #eee;
+    margin: 4px 0;
+}
+
+.danger {
+    color: #dc3545;
+}
+
+.danger:hover {
+    background: #f8d7da !important;
+}
+
+
+/* Новые стили для расширяемого блока статусов */
+.status-expandable {
+    width: 250px;
+    margin: 15px auto 0;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.status-current {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #f8f9fa;
+}
+
+.status-label {
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.status-options {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.status-expandable.expanded .status-options {
+    max-height: 500px; /* Достаточно большое значение для всех вариантов */
+}
+
+.status-option {
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s ease;
+    text-align: center;
+}
+
+.status-option:hover {
+    background: #f5f5f5;
+}
+
+.status-option.danger {
+    color: #dc3545;
+}
+
+.status-option.danger:hover {
+    background: #f8d7da;
+}
+
+/* Анимация иконки */
+.status-expandable .fa-chevron-down {
+    transition: transform 0.3s ease;
+}
+
+.status-expandable.expanded .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+
+/* Добавьте эти стили */
+.status-expandable {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.status-current {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.status-options {
+    display: none;
+    margin-top: 5px;
+}
+
+.status-expandable.expanded .status-options {
+    display: block;
+}
+
+.status-option {
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.status-option:hover {
+    background: #f0f0f0;
+}
+
+/* Цвета кнопок статусов */
+.btn-add { background: #e9ecef; color: #495057; }
+.btn-planned { background: #fff3cd; color: #856404; }
+.btn-reading { background: #d1ecf1; color: #0c5460; }
+.btn-completed { background: #d4edda; color: #155724; }
+.btn-dropped { background: #f8d7da; color: #721c24; }
+.btn-on_hold { background: #e2e3e5; color: #383d41; }

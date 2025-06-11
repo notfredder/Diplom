@@ -1,0 +1,24 @@
+/* # Главный файл для импорта */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import 'base/reset.css';
+@import 'base/variables.css';
+@import 'base/typography.css';
+@import 'base/utilities.css';
+
+@import 'components/header.css';
+@import 'components/footer.css';
+@import 'components/book-card.css';
+@import 'components/book.css';
+@import 'components/search.css';
+@import 'components/auth-forms.css';
+@import 'components/admin_books.css';
+@import 'components/admin.css';
+@import 'components/update_status.css';
+@import 'components/settings.css';
+@import 'components/profile.css';
+@import 'components/modal.css';
+
+@import 'layouts/grid.css';
+@import 'layouts/scroll.css';
+@import 'layouts/bookshelf.css';

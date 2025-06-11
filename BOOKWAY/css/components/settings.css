@@ -1,0 +1,199 @@
+/* # Страница настроек */
+
+/* Настройки профиля */
+.settings-page {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.settings-container {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.avatar-group {
+    margin-top: 30px;
+}
+
+.avatar-preview-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.current-avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #eee;
+}
+
+.avatar-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#avatarInput {
+    display: none;
+}
+
+.upload-btn {
+    padding: 8px 15px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.2s;
+}
+
+.upload-btn:hover {
+    background: #e0e0e0;
+}
+
+.hint {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+}
+
+.form-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.save-btn {
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logout-btn {
+    padding: 10px 20px;
+    background: #f8f8f8;
+    color: #d32f2f;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.alert {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.alert.error {
+    background: #ffebee;
+    color: #d32f2f;
+}
+
+.alert.success {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.settings-section {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
+
+.settings-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+/* Убираем стрелочки у числового поля */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Единый стиль для всех полей ввода */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group input[type="url"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+/* Стиль для выпадающего списка */
+.form-group select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 30px;
+}
+
+/* Скрываем стандартный инпут файла */
+#headerInput {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Стили для контейнера загрузки шапки */
+.header-preview-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.current-header {
+    max-width: 100%;
+    max-height: 250 px;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}

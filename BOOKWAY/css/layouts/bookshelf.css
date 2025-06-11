@@ -1,0 +1,41 @@
+/* # Полка с книгами */
+
+.books-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.books-section {
+    margin-bottom: 20px;
+}
+
+.section-header {
+    margin-bottom: 0px;
+    padding: 0 10px;
+}
+
+.section-title:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 20px;
+    }
+    
+    .books-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .scroll-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    .view-all-btn {
+        width: 150px;
+        height: 300px;
+    }
+}
